@@ -1,0 +1,101 @@
+<html>
+    <head><title>www.eaters.com
+    </title>
+    <style>
+    .buton {
+        background-color: #75bce2;
+        border: none;
+        color: rgb(28, 1, 22);
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 1px 1px;
+        cursor: pointer;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #f8f8f8;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      margin: 40px auto;
+      max-width: 500px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      height: 100px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+</style>
+
+    </head>
+    <body>
+        <pre>
+            
+
+
+        
+            
+            <a href="home.html" class="buton">home</a>   <a href="order.html"class="buton">order</a>  <a href="menu.html"class="buton">menu</a>  <a href="donate.html"class="buton">donate</a>
+        </pre>
+        <header>
+            <h1>Order Food & Donate</h1>
+          </header>
+        
+          <form action="/place-order" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+        
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+        
+            <label for="food">Food:</label>
+            <input type="text" id="food" name="food" required>
+        
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+        
+            <label for="donate">Donate Food:</label>
+            <input type="checkbox" id="donate" name="donate">
+        
+            <input type="submit" value="Place Order">
+          </form>
+    </body>
+    </html>
